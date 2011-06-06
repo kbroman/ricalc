@@ -2,9 +2,26 @@
 Revision history for the R/ricalc package
 ----------------------------------------------------------------------
 copyright (c) 2003-2009, Karl W Broman
-Licensed under the GNU General Public License version 2 (June, 1991)
+
+    The R/ricalc package is free software; you can redistribute it
+    and/or modify it under the terms of the GNU General Public
+    License, version 3, as published by the Free Software Foundation.
+    
+    This program is distributed in the hope that it will be useful,
+    but without any warranty; without even the implied warranty of
+    merchantability or fitness for a particular purpose.  See the GNU
+    General Public License for more details.
+    
+    A copy of the GNU General Public License, version 3, is available
+    at http://www.r-project.org/Licenses/GPL-3
+
 http://www.biostat.wisc.edu/~kbroman/software
 ----------------------------------------------------------------------
+
+Version 0.53-1, 6/6/2011:
+
+  Update license to GPL-3
+
 
 Version 0.52-3, 10/26/2009:
 
