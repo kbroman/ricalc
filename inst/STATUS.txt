@@ -1,0 +1,43 @@
+
+Revision history for the R/ricalc package
+----------------------------------------------------------------------
+copyright (c) 2003-2009, Karl W Broman
+Licensed under the GNU General Public License version 2 (June, 1991)
+http://www.biostat.wisc.edu/~kbroman/software
+----------------------------------------------------------------------
+
+Version 0.52-3, 10/26/2009:
+
+  Fixed links in help files.
+
+
+Version 0.52-2, 4/22/2009:
+
+  Fixed a couple of warning messages that showed up in the latest
+  version of R's package checks.  Changed the name of the function
+  length.het to lengthHet
+
+
+Version 0.52-1, 10/9/2007:
+
+  Fixed a bug in get.meiosis.tm.symbolic
+
+
+Version 0.51-3, 10/9/2007:
+
+  Fixed some slight problems in the help files.
+
+
+Version 0.51, 5/10/2006:
+
+  Added an attribute to the results of sim.ri() indicating the number
+  of breakpoints of the first of the two individuals in each
+  generation. 
+
+
+Version 0.50, 11/18/2004:
+
+  A brand-new package.
+
+----------------------------------------------------------------------
+end of STATUS.txt

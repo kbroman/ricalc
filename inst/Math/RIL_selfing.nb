@@ -1,0 +1,712 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     18018,        539]*)
+(*NotebookOutlinePosition[     18815,        566]*)
+(*  CellTagsIndexPosition[     18771,        562]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["RILs by selfing", "Title"],
+
+Cell[CellGroupData[{
+
+Cell["Two points", "Section"],
+
+Cell["\<\
+The following is the joint distribution for two points in two-way \
+RILs.\
+\>", "Text"],
+
+Cell[BoxData[
+    \(Off[General::spell]\)], "Input",
+  CellLabel->"In[2]:=",
+  InitializationCell->True],
+
+Cell[BoxData[{
+    \(\(pAA2w\  = \ \((1/2)\)\ /\((1 + 2  r)\);\)\), "\[IndentingNewLine]", 
+    \(\(pAB2w\  = \ r\ /\((1 + 2  r)\);\)\)}], "Input",
+  CellLabel->"In[3]:="],
+
+Cell["To get to the four-way case, we use the following equations.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pAA4w\  = \ Simplify[\ \((\((1 - r)\)/2)\)\ pAA2w\ ]\)], "Input",
+  CellLabel->"In[5]:="],
+
+Cell[BoxData[
+    \(\(1 - r\)\/\(4 + 8\ r\)\)], "Output",
+  CellLabel->"Out[5]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pAB4w\  = \ Simplify[\ \((r/2)\)\ pAA2w\ ]\)], "Input",
+  CellLabel->"In[6]:="],
+
+Cell[BoxData[
+    \(r\/\(4 + 8\ r\)\)], "Output",
+  CellLabel->"Out[6]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pAC4w\  = \ Simplify[\ \((1/4)\)\ pAB2w\ ]\)], "Input",
+  CellLabel->"In[7]:="],
+
+Cell[BoxData[
+    \(r\/\(4 + 8\ r\)\)], "Output",
+  CellLabel->"Out[7]="]
+}, Open  ]],
+
+Cell["To get to the eight-way case,we use the following equations.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pAA8w\  = \ Simplify[\ \((\((1 - r)\)/2)\)\ pAA4w\ ]\)], "Input",
+  CellLabel->"In[8]:="],
+
+Cell[BoxData[
+    \(\((\(-1\) + r)\)\^2\/\(8 + 16\ r\)\)], "Output",
+  CellLabel->"Out[8]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pAB8w\  = \ Simplify[\ \((r/2)\)\ pAA4w\ ]\)], "Input",
+  CellLabel->"In[9]:="],
+
+Cell[BoxData[
+    \(\(-\(\(\((\(-1\) + r)\)\ r\)\/\(8 + 16\ r\)\)\)\)], "Output",
+  CellLabel->"Out[9]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pAC8w\  = \ Simplify[\ \((1/4)\)\ pAB4w\ ]\)], "Input",
+  CellLabel->"In[10]:="],
+
+Cell[BoxData[
+    \(r\/\(16 + 32\ r\)\)], "Output",
+  CellLabel->"Out[10]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pAE8w\  = \ Simplify[\ \((1/4)\)\ pAC4w\ ]\)], "Input",
+  CellLabel->"In[11]:="],
+
+Cell[BoxData[
+    \(r\/\(16 + 32\ r\)\)], "Output",
+  CellLabel->"Out[11]="]
+}, Open  ]],
+
+Cell["Here is the \"recombination fraction\" in 2-way RILs.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(R2w\  = \ Simplify[2\ pAB2w]\)], "Input",
+  CellLabel->"In[12]:="],
+
+Cell[BoxData[
+    \(\(2\ r\)\/\(1 + 2\ r\)\)], "Output",
+  CellLabel->"Out[12]="]
+}, Open  ]],
+
+Cell["Here is the \"recombination fraction\" in 4-way RILs", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(R4w\  = \ Simplify[\ 4 \((pAB4w\  + \ 2\ pAC4w)\)\ ]\)], "Input",
+  CellLabel->"In[13]:="],
+
+Cell[BoxData[
+    \(\(3\ r\)\/\(1 + 2\ r\)\)], "Output",
+  CellLabel->"Out[13]="]
+}, Open  ]],
+
+Cell["Here is the \"recombination fraction\" in 8-way RILs.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(R8w\  = \ 
+      Simplify[8\ \((pAB8w\  + \ 2\ pAC8w\  + \ 4\ pAE8w)\)]\)], "Input",
+  CellLabel->"In[14]:="],
+
+Cell[BoxData[
+    \(\(-\(\(\((\(-4\) + r)\)\ r\)\/\(1 + 2\ r\)\)\)\)], "Output",
+  CellLabel->"Out[14]="]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Three points", "Section"],
+
+Cell[BoxData[
+    \(\(r13\  = \ 2\ r\ \((1 - c\ r)\);\)\)], "Input",
+  CellLabel->"In[15]:="],
+
+Cell["\<\
+First we consider 2-way RILs, and first we get the expression in \
+terms of the recombination fraction at meiosis.\
+\>", "Text"],
+
+Cell[BoxData[{
+    \(\(fAA2w[r_]\  := \(1/2\)/\((1 + 2  r)\);\)\), "\[IndentingNewLine]", 
+    \(\(fAB2w[r_]\  := r/\((1 + 2  r)\);\)\)}], "Input",
+  CellLabel->"In[16]:="],
+
+Cell[BoxData[
+    \(\(eqns\  = \ {pAAA2w\  + \ pAAB2w\  \[Equal] \ 
+            fAA2w[r], \[IndentingNewLine]pAAB2w\  + \ pABA2w\  \[Equal] \ 
+            fAB2w[r], \ 
+          pAAA2w\  + \ pABA2w\  \[Equal] \ fAA2w[r13]};\)\)], "Input",
+  CellLabel->"In[18]:="],
+
+Cell[BoxData[{
+    \(\(Clear[pAAA2w, pAAB2w, pABA2w];\)\), "\[IndentingNewLine]", 
+    \(\(Solve[eqns, {pAAA2w, pAAB2w, pABA2w}];\)\)}], "Input",
+  CellLabel->"In[19]:="],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(p3pt2w = {pAAA2w, pAAB2w, 
+            pABA2w}\  /. \ %[\([1]\)];\)\), "\[IndentingNewLine]", 
+    \(p3pt2w\  = \ Together[p3pt2w]\)}], "Input",
+  CellLabel->"In[21]:="],
+
+Cell[BoxData[
+    \({\(\(-1\) - 2\ r + 4\ r\^2 + 2\ c\ r\^2 - 4\ c\ r\^3\)\/\(2\ \((1 + 2\ \
+r)\)\ \((\(-1\) - 4\ r + 4\ c\ r\^2)\)\), \(\(-r\) + c\ r\^2\)\/\(\(-1\) - 4\ \
+r + 4\ c\ r\^2\), \(\(-2\)\ r\^2 - c\ r\^2 + 2\ c\ r\^3\)\/\(\((1 + 2\ r)\)\ \
+\((\(-1\) - 4\ r + 4\ c\ r\^2)\)\)}\)], "Output",
+  CellLabel->"Out[22]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(R\  = \ R2w;\)\), "\[IndentingNewLine]", 
+    \(Simplify[2\ p3pt2w[\([3]\)]/R^2]\)}], "Input",
+  CellLabel->"In[23]:="],
+
+Cell[BoxData[
+    \(\(2 + c + 4\ r - 4\ c\ r\^2\)\/\(2 + 8\ r - 8\ c\ r\^2\)\)], "Output",
+  CellLabel->"Out[24]="]
+}, Open  ]],
+
+Cell["\<\
+Now let's get the expression in terms of the recombination fraction \
+in the RIL.\
+\>", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(Clear[R];\)\), "\[IndentingNewLine]", 
+    \(\(r\  = \ R\ /\ \((2\  - \ 2\ R)\);\)\), "\[IndentingNewLine]", 
+    \(co2w\  = \ Simplify[2\ p3pt2w[\([3]\)]/R^2]\)}], "Input",
+  CellLabel->"In[25]:="],
+
+Cell[BoxData[
+    \(\(-\(\(2 + c - 2\ R - 
+            2\ c\ R\)\/\(2\ \((\(-1\) + \((1 + 
+                      c)\)\ R\^2)\)\)\)\)\)], "Output",
+  CellLabel->"Out[27]="]
+}, Open  ]],
+
+Cell["We now turn to the case of four-way RILs.", "Text"],
+
+Cell[BoxData[{
+    \(\(Clear[r];\)\), "\[IndentingNewLine]", 
+    \(\(pAAA4w\  = \ 
+        Simplify[
+          p3pt2w[\([1]\)]\ \((1\  - \ 2\ r\  + \ c\ r^2)\)/
+              2];\)\), "\[IndentingNewLine]", 
+    \(\(pAAB4w\  = \ 
+        Simplify[
+          p3pt2w[\([1]\)]\ r\ \((1 - c\ r)\)/2];\)\), "\[IndentingNewLine]", 
+    \(\(pAAC4w\  = \ 
+        Simplify[p3pt2w[\([2]\)] \((1 - r)\)/4];\)\), "\[IndentingNewLine]", 
+    \(\(pABA4w\  = \ 
+        Simplify[p3pt2w[\([1]\)] c\ r^2/2];\)\), "\[IndentingNewLine]", 
+    \(\(pABC4w\  = \ 
+        Simplify[p3pt2w[\([2]\)]\ r\ /\ 4];\)\), "\[IndentingNewLine]", 
+    \(\(pACB4w\  = \ 
+        Simplify[
+          p3pt2w[\([3]\)]\ r\ \((1 - c\ r)\)/2];\)\), "\[IndentingNewLine]", 
+    \(\(pACA4w\  = \ 
+        Simplify[
+          p3pt2w[\([3]\)] \((1 - 2\ r\ \((1 - c\ r)\))\)/4];\)\)}], "Input",
+  CellLabel->"In[28]:="],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p4pt2w\  = \ {pAAA4w, pAAB4w, \ pAAC4w, \ pABA4w, \ pABC4w, \ pACB4w, \ 
+        pACA4w}\)], "Input",
+  CellLabel->"In[36]:="],
+
+Cell[BoxData[
+    \({\(-\(\(\((1 - 2\ r + c\ r\^2)\)\ \((1 + 2\ r - 2\ \((2 + c)\)\ r\^2 + 
+                  4\ c\ r\^3)\)\)\/\(4\ \((1 + 2\ r)\)\ \((\(-1\) - 4\ r + 
+                  4\ c\ r\^2)\)\)\)\), \(r\ \((\(-1\) + c\ r)\)\ \((1 + 2\ r \
+- 2\ \((2 + c)\)\ r\^2 + 4\ c\ r\^3)\)\)\/\(4\ \((1 + 2\ r)\)\ \((\(-1\) - 4\ \
+r + 4\ c\ r\^2)\)\), \(-\(\(\((\(-1\) + r)\)\ r\ \((\(-1\) + 
+                  c\ r)\)\)\/\(4\ \((\(-1\) - 4\ r + 
+                  4\ c\ r\^2)\)\)\)\), \(-\(\(c\ r\^2\ \((1 + 2\ r - 
+                  2\ \((2 + c)\)\ r\^2 + 4\ c\ r\^3)\)\)\/\(4\ \((1 + 
+                  2\ r)\)\ \((\(-1\) - 4\ r + 
+                  4\ c\ r\^2)\)\)\)\), \(r\^2 - c\ r\^3\)\/\(4 + 16\ r - 16\ \
+c\ r\^2\), \(-\(\(r\^3\ \((\(-1\) + c\ r)\)\ \((\(-2\) + 
+                  c\ \((\(-1\) + 2\ r)\))\)\)\/\(2\ \((1 + 
+                  2\ r)\)\ \((\(-1\) - 4\ r + 
+                  4\ c\ r\^2)\)\)\)\), \(r\^2\ \((1 - 2\ r + 2\ c\ r\^2)\)\ \
+\((\(-2\) + c\ \((\(-1\) + 2\ r)\))\)\)\/\(4\ \((1 + 2\ r)\)\ \((\(-1\) - 4\ \
+r + 4\ c\ r\^2)\)\)}\)], "Output",
+  CellLabel->"Out[36]="]
+}, Open  ]],
+
+Cell["\<\
+Now we can calculate the coincidence for 4-way RILs by \
+selfing.\
+\>", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(Clear[r, R];\)\), "\[IndentingNewLine]", 
+    \(\(R\  = \ R4w;\)\), "\[IndentingNewLine]", 
+    \(co4w = 
+      Simplify[\((4\ pABA4w\  + \ 16\ pABC4w\  + \ 8\ pACB4w\  + \ 
+              8\ pACA4w)\)/R^2]\)}], "Input",
+  CellLabel->"In[37]:="],
+
+Cell[BoxData[
+    \(\(-\(\(\((1 + 2\ r)\)\ \((8\ \((1 + r)\) + 
+                2\ c\^2\ r\^2\ \((\(-1\) + 2\ r)\) - 
+                3\ c\ \((\(-1\) + 2\ r + 4\ r\^2)\))\)\)\/\(9\ \((\(-1\) - 
+                4\ r + 4\ c\ r\^2)\)\)\)\)\)], "Output",
+  CellLabel->"Out[39]="]
+}, Open  ]],
+
+Cell["And then we can re-expression that in terms of R.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(Clear[R];\)\), "\[IndentingNewLine]", 
+    \(\(r\  = \ R\ /\ \((3\  - \ 2\ R)\);\)\), "\[IndentingNewLine]", 
+    \(Simplify[co4w]\)}], "Input",
+  CellLabel->"In[40]:="],
+
+Cell[BoxData[
+    \(\(8\ \((3 - 2\ R)\)\^2\ \((\(-3\) + R)\) + 2\ c\^2\ \((3 - 4\ R)\)\ \
+R\^2 + 3\ c\ \((\(-27\) + 72\ R - 48\ R\^2 + 8\ R\^3)\)\)\/\(3\ \((3 - 2\ \
+R)\)\^2\ \((\(-9\) + 4\ \((1 + c)\)\ R\^2)\)\)\)], "Output",
+  CellLabel->"Out[42]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[co4w\  /. \ {R \[Rule] 0}]\)], "Input",
+  CellLabel->"In[44]:="],
+
+Cell[BoxData[
+    \(1\/9\ \((8 + 3\ c)\)\)], "Output",
+  CellLabel->"Out[44]="]
+}, Open  ]],
+
+Cell["\<\
+Now we move on to the case of 8-way RILs by selfing.  First the \
+three-point probabilities.\
+\>", "Text"],
+
+Cell[BoxData[{
+    \(\(Clear[r];\)\), "\[IndentingNewLine]", 
+    \(\(pAAA8w\  = \ 
+        Simplify[
+          pAAA4w\ \((1/2)\)\ \((1 - 2\ r\  + \ 
+                c\ r^2)\)];\)\), "\[IndentingNewLine]", 
+    \(\(pAAB8w\  = \ 
+        Simplify[
+          pAAA4w\ \((1/2)\)\ r\ \((1\  - \ 
+                c\ r)\)];\)\), "\[IndentingNewLine]", 
+    \(\(pABA8w\  = \ 
+        Simplify[pAAA4w\ \((1/2)\)\ c\ r^2];\)\), "\[IndentingNewLine]", 
+    \(\(pAAC8w\  = \ 
+        Simplify[
+          pAAB4w\ \((1/4)\)\ \((1 - r)\)];\)\), "\[IndentingNewLine]", 
+    \(\(pACA8w\  = \ 
+        Simplify[
+          pABA4w\ \((1/4)\)\ \((1\  - \ 
+                2\ r\ \((1\  - \ c\ r)\))\)];\)\), "\[IndentingNewLine]", 
+    \(\(pAAE8w\  = \ 
+        Simplify[pAAC4w\ \((1/4)\) \((1 - r)\)];\)\), "\[IndentingNewLine]", 
+    \(\(pAEA8w\  = \ 
+        Simplify[
+          pACA4w\ \((1/4)\) \((1\  - \ 
+                2\ r\ \((1\  - \ c\ r\ )\))\)];\)\), "\[IndentingNewLine]", 
+    \(\(pABC8w\  = \ 
+        Simplify[pAAB4w\ \((1/4)\)\ r];\)\), "\[IndentingNewLine]", 
+    \(\(pACB8w\  = \ 
+        Simplify[
+          pABA4w\ \((1/2)\) r\ \((1 - c\ r)\)];\)\), "\[IndentingNewLine]", 
+    \(\(pABE8w\  = \ 
+        Simplify[pAAC4w\ \((1/4)\)\ r];\)\), "\[IndentingNewLine]", 
+    \(\(pAEB8w\  = \ 
+        Simplify[
+          pACA4w\ \((1/2)\)\ r\ \((1\  - \ 
+                c\ r)\)];\)\), "\[IndentingNewLine]", 
+    \(\(pACE8w\  = \ Simplify[pABC4w\ /\ 8];\)\), "\[IndentingNewLine]", 
+    \(\(pAEC8w\  = \ Simplify[pACB4w/8];\)\)}], "Input",
+  CellLabel->"In[45]:="],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p3pt8w\  = \ 
+      FullSimplify[{pAAA8w, pAAB8w, pABA8w, pAAC8w, \ pACA8w, \ pAAE8w, 
+          pAEA8w, pABC8w, pACB8w, pABE8w, pAEB8w, pACE8w, pAEC8w}]\)], "Input",\
+
+  CellLabel->"In[59]:="],
+
+Cell[BoxData[
+    \({\(-\(\(\((1 + r\ \((\(-2\) + c\ r)\))\)\^2\ \((1 + 
+                  2\ r\ \((\(-1\) + 2\ r)\)\ \((\(-1\) + 
+                        c\ r)\))\)\)\/\(8\ \((1 + 2\ r)\)\ \((\(-1\) + 
+                  4\ r\ \((\(-1\) + 
+                        c\ r)\))\)\)\)\), \(r\ \((\(-1\) + c\ r)\)\ \((1 + r\ \
+\((\(-2\) + c\ r)\))\)\ \((1 + 2\ r\ \((\(-1\) + 2\ r)\)\ \((\(-1\) + c\ \
+r)\))\)\)\/\(8\ \((1 + 2\ r)\)\ \((\(-1\) + 4\ r\ \((\(-1\) + c\ r)\))\)\), \
+\(-\(\(c\ r\^2\ \((1 + r\ \((\(-2\) + c\ r)\))\)\ \((1 + 
+                  2\ r\ \((\(-1\) + 2\ r)\)\ \((\(-1\) + 
+                        c\ r)\))\)\)\/\(8\ \((1 + 2\ r)\)\ \((\(-1\) + 
+                  4\ r\ \((\(-1\) + c\ r)\))\)\)\)\), \(-\(\(\((\(-1\) + 
+                  r)\)\ r\ \((\(-1\) + c\ r)\)\ \((1 + 
+                  2\ r\ \((\(-1\) + 2\ r)\)\ \((\(-1\) + 
+                        c\ r)\))\)\)\/\(16\ \((1 + 2\ r)\)\ \((\(-1\) + 
+                  4\ r\ \((\(-1\) + c\ r)\))\)\)\)\), \(-\(\(c\ r\^2\ \((1 + 
+                  2\ r\ \((\(-1\) + c\ r)\))\)\ \((1 + 
+                  2\ r\ \((\(-1\) + 2\ r)\)\ \((\(-1\) + 
+                        c\ r)\))\)\)\/\(16\ \((1 + 2\ r)\)\ \((\(-1\) + 
+                  4\ r\ \((\(-1\) + 
+                        c\ r)\))\)\)\)\), \(\((\(-1\) + r)\)\^2\ r\ \((\(-1\) \
++ c\ r)\)\)\/\(16\ \((\(-1\) + 4\ r\ \((\(-1\) + c\ r)\))\)\), \(r\^2\ \
+\((\(-2\) + c\ \((\(-1\) + 2\ r)\))\)\ \((1 + 2\ r\ \((\(-1\) + c\ r)\))\)\^2\
+\)\/\(16\ \((1 + 2\ r)\)\ \((\(-1\) + 4\ r\ \((\(-1\) + c\ r)\))\)\), \(r\^2\ \
+\((\(-1\) + c\ r)\)\ \((1 + 2\ r\ \((\(-1\) + 2\ r)\)\ \((\(-1\) + c\ r)\))\)\
+\)\/\(16\ \((1 + 2\ r)\)\ \((\(-1\) + 4\ r\ \((\(-1\) + c\ r)\))\)\), \(c\ \
+r\^3\ \((\(-1\) + c\ r)\)\ \((1 + 2\ r\ \((\(-1\) + 2\ r)\)\ \((\(-1\) + c\ \
+r)\))\)\)\/\(8\ \((1 + 2\ r)\)\ \((\(-1\) + 4\ r\ \((\(-1\) + c\ r)\))\)\), \
+\(-\(\(\((\(-1\) + r)\)\ r\^2\ \((\(-1\) + c\ r)\)\)\/\(16\ \((\(-1\) + 
+                  4\ r\ \((\(-1\) + 
+                        c\ r)\))\)\)\)\), \(-\(\(r\^3\ \((\(-1\) + 
+                  c\ r)\)\ \((\(-2\) + c\ \((\(-1\) + 2\ r)\))\)\ \((1 + 
+                  2\ r\ \((\(-1\) + c\ r)\))\)\)\/\(8\ \((1 + 
+                  2\ r)\)\ \((\(-1\) + 
+                  4\ r\ \((\(-1\) + 
+                        c\ r)\))\)\)\)\), \(r\^2\ \((\(-1\) + c\ r)\)\)\/\(32\
+\ \((\(-1\) + 4\ r\ \((\(-1\) + c\ r)\))\)\), \(-\(\(r\^3\ \((\(-1\) + 
+                  c\ r)\)\ \((\(-2\) + 
+                  c\ \((\(-1\) + 2\ r)\))\)\)\/\(16\ \((1 + 
+                  2\ r)\)\ \((\(-1\) + 
+                  4\ r\ \((\(-1\) + c\ r)\))\)\)\)\)}\)], "Output",
+  CellLabel->"Out[59]="]
+}, Open  ]],
+
+Cell["Now, the three-point coincidence for 8-way RILs by selfing.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(R\  = \ R8w;\)\), "\[IndentingNewLine]", 
+    \(co8w\  = \ 
+      FullSimplify[\((1\  - \ 8\ pAAA8w\  - \ 16\ pAAB8w\  - \ 
+              32\ pAAC8w\  - \ 64\ pAAE8w)\)/R^2]\)}], "Input",
+  CellLabel->"In[60]:="],
+
+Cell[BoxData[
+    \(\(-\(\((\((1 + 2\ r)\)\ \((2\ c\^3\ r\^4\ \((\(-1\) + 2\ r)\) + 
+                c\^2\ r\^2\ \((\(-3\) + 2\ \((9 - 10\ r)\)\ r)\) + 
+                2\ \((7 - 8\ \((\(-1\) + r)\)\ r)\) + 
+                4\ c\ \((1 + 
+                      r\ \((\(-3\) + 
+                            8\ \((\(-1\) + 
+                                  r)\)\ r)\))\))\))\)/\((\((\(-4\) + r)\)\^2\ \
+\((\(-1\) + 4\ r\ \((\(-1\) + c\ r)\))\))\)\)\)\)], "Output",
+  CellLabel->"Out[61]="]
+}, Open  ]],
+
+Cell["Expressing this in terms of R is exceedingly ugly.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(Clear[R];\)\), "\[IndentingNewLine]", 
+    \(\(r\  = \ \((2 - R)\) - 
+          Sqrt[\((2 - R)\)^2 - R];\)\), "\[IndentingNewLine]", 
+    \(FullSimplify[co8w]\)}], "Input",
+  CellLabel->"In[62]:="],
+
+Cell[BoxData[
+    \(\(-\(\((\((5 - 2\ \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\)\) - 
+                2\ R)\)\ \((\(-82\) + 
+                48\ \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\)\) - 
+                32\ \((\(-4\) + \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\)\))\)\ \
+R - 32\ R\^2 - 
+                2\ c\^3\ \((\(-2\) + \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\)\) \
++ R)\)\^4\ \((\(-3\) + 2\ \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\)\) + 
+                      2\ R)\) - 
+                c\^2\ \((\(-2\) + \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\)\) + \
+R)\)\^2\ \((127 - 62\ \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\)\) + 
+                      2\ R\ \((\(-81\) + 
+                            20\ \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\)\) + 
+                            20\ R)\))\) + 
+                4\ c\ \((1 - \((\(-2\) + \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\
+\)\) + R)\)\ \((45 - 24\ \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\)\) + 
+                            16\ R\ \((\(-4\) + \@\(\((\(-4\) + R)\)\ \
+\((\(-1\) + R)\)\) + 
+                                  R)\))\))\))\))\)/\((\((2 + \@\(\((\(-4\) + \
+R)\)\ \((\(-1\) + R)\)\) + R)\)\^2\ \((\(-1\) + 
+                4\ \((\(-2\) + \@\(\((\(-4\) + R)\)\ \((\(-1\) + R)\)\) + 
+                      R)\)\ \((1 + 
+                      c\ \((\(-2\) + 
+                            R + \@\(4 - 5\ R + R\^2\))\))\))\))\)\)\)\)], \
+"Output",
+  CellLabel->"Out[64]="]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Macintosh",
+ScreenRectangle->{{0, 1280}, {0, 828}},
+AutoGeneratedPackage->Automatic,
+ScreenStyleEnvironment->"Working",
+WindowSize->{715, 721},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+StyleDefinitions -> "ArticleModern.nb"
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 32, 0, 100, "Title"],
+
+Cell[CellGroupData[{
+Cell[1833, 57, 29, 0, 75, "Section"],
+Cell[1865, 59, 97, 3, 29, "Text"],
+Cell[1965, 64, 104, 3, 51, "Input",
+  InitializationCell->True],
+Cell[2072, 69, 171, 3, 70, "Input"],
+Cell[2246, 74, 76, 0, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[2347, 78, 109, 2, 51, "Input"],
+Cell[2459, 82, 81, 2, 68, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2577, 89, 99, 2, 51, "Input"],
+Cell[2679, 93, 73, 2, 66, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2789, 100, 99, 2, 51, "Input"],
+Cell[2891, 104, 73, 2, 66, "Output"]
+}, Open  ]],
+Cell[2979, 109, 76, 0, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[3080, 113, 109, 2, 51, "Input"],
+Cell[3192, 117, 92, 2, 72, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3321, 124, 99, 2, 51, "Input"],
+Cell[3423, 128, 105, 2, 68, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3565, 135, 100, 2, 51, "Input"],
+Cell[3668, 139, 76, 2, 66, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3781, 146, 100, 2, 51, "Input"],
+Cell[3884, 150, 76, 2, 66, "Output"]
+}, Open  ]],
+Cell[3975, 155, 69, 0, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[4069, 159, 86, 2, 51, "Input"],
+Cell[4158, 163, 81, 2, 68, "Output"]
+}, Open  ]],
+Cell[4254, 168, 68, 0, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[4347, 172, 110, 2, 51, "Input"],
+Cell[4460, 176, 81, 2, 68, "Output"]
+}, Open  ]],
+Cell[4556, 181, 69, 0, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[4650, 185, 129, 3, 51, "Input"],
+Cell[4782, 190, 105, 2, 68, "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4936, 198, 31, 0, 75, "Section"],
+Cell[4970, 200, 93, 2, 51, "Input"],
+Cell[5066, 204, 138, 3, 48, "Text"],
+Cell[5207, 209, 172, 3, 70, "Input"],
+Cell[5382, 214, 263, 5, 70, "Input"],
+Cell[5648, 221, 170, 3, 70, "Input"],
+
+Cell[CellGroupData[{
+Cell[5843, 228, 192, 4, 70, "Input"],
+Cell[6038, 234, 326, 5, 122, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6401, 244, 142, 3, 70, "Input"],
+Cell[6546, 249, 115, 2, 72, "Output"]
+}, Open  ]],
+Cell[6676, 254, 105, 3, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[6806, 261, 221, 4, 89, "Input"],
+Cell[7030, 267, 171, 4, 71, "Output"]
+}, Open  ]],
+Cell[7216, 274, 57, 0, 29, "Text"],
+Cell[7276, 276, 876, 21, 184, "Input"],
+
+Cell[CellGroupData[{
+Cell[8177, 301, 146, 3, 70, "Input"],
+Cell[8326, 306, 1091, 17, 263, "Output"]
+}, Open  ]],
+Cell[9432, 326, 89, 3, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[9546, 333, 267, 6, 108, "Input"],
+Cell[9816, 341, 275, 5, 75, "Output"]
+}, Open  ]],
+Cell[10106, 349, 65, 0, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[10196, 353, 192, 4, 89, "Input"],
+Cell[10391, 359, 251, 4, 75, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10679, 368, 93, 2, 51, "Input"],
+Cell[10775, 372, 79, 2, 68, "Output"]
+}, Open  ]],
+Cell[10869, 377, 116, 3, 29, "Text"],
+Cell[10988, 382, 1560, 38, 298, "Input"],
+
+Cell[CellGroupData[{
+Cell[12573, 424, 213, 5, 108, "Input"],
+Cell[12789, 431, 2624, 41, 535, "Output"]
+}, Open  ]],
+Cell[15428, 475, 75, 0, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[15528, 479, 235, 5, 108, "Input"],
+Cell[15766, 486, 486, 9, 94, "Output"]
+}, Open  ]],
+Cell[16267, 498, 66, 0, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[16358, 502, 220, 5, 89, "Input"],
+Cell[16581, 509, 1397, 25, 302, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

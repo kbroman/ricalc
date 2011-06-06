@@ -1,0 +1,161 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      3305,        106]*)
+(*NotebookOutlinePosition[      4034,        131]*)
+(*  CellTagsIndexPosition[      3990,        127]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Three points in meiosis", "Title"],
+
+Cell[TextData[{
+  "We seek here to determine the joint probabilities for the haplotype on a \
+meiotic product from the cross AAA x BBB.   We assume that the two intervals \
+have common recombination fraction, r, and let c denote the three-point \
+coincidence---that is, Pr(double recombinant) / ",
+  Cell[BoxData[
+      \(TraditionalForm\`\(\(r\^2\)\(.\)\)\)]]
+}], "Text"],
+
+Cell[BoxData[{
+    \(\(Clear[r, r13, c, pAAA, pAAB, pABA];\)\), "\[IndentingNewLine]", 
+    \(\(r13\  = \ 2\ r\ \((1 - c\ r)\);\)\)}], "Input",
+  CellLabel->"In[65]:="],
+
+Cell[BoxData[
+    \(\(eqns\  = \ {pAAA + \ pAAB\  == \ \((1 - r)\)/2, \ 
+          pAAA + pABA == \((1 - r13)\)/2, \[IndentingNewLine]pAAB + 
+              pABA \[Equal] \ r/2};\)\)], "Input",
+  CellLabel->"In[67]:="],
+
+Cell[BoxData[
+    \(\(Solve[eqns, {pAAA, pAAB, pABA}];\)\)], "Input",
+  CellLabel->"In[68]:="],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p\  = {pAAA, pAAB, pABA}\  /. \ %[\([1]\)]\)], "Input",
+  CellLabel->"In[69]:="],
+
+Cell[BoxData[
+    \({\(-\(1\/2\)\)\ \((\(-1\) + 2\ r - 
+            c\ r\^2)\), \(-\(1\/2\)\)\ \((\(-r\) + 
+            c\ r\^2)\), \(c\ r\^2\)\/2}\)], "Output",
+  CellLabel->"Out[69]="]
+}, Open  ]],
+
+Cell["We should have that p[1] + 2 p[2] + p[3] = 1/2.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[p[\([1]\)]\  + \ 2\ p[\([2]\)]\  + \ p[\([3]\)]]\)], "Input",
+  CellLabel->"In[70]:="],
+
+Cell[BoxData[
+    \(1\/2\)], "Output",
+  CellLabel->"Out[70]="]
+}, Open  ]]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Macintosh",
+ScreenRectangle->{{0, 1280}, {0, 828}},
+WindowSize->{647, 704},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+StyleDefinitions -> "ArticleModern.nb"
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 40, 0, 100, "Title"],
+Cell[1819, 55, 372, 7, 68, "Text"],
+Cell[2194, 64, 168, 3, 70, "Input"],
+Cell[2365, 69, 217, 4, 89, "Input"],
+Cell[2585, 75, 94, 2, 51, "Input"],
+
+Cell[CellGroupData[{
+Cell[2704, 81, 100, 2, 51, "Input"],
+Cell[2807, 85, 186, 4, 72, "Output"]
+}, Open  ]],
+Cell[3008, 92, 63, 0, 29, "Text"],
+
+Cell[CellGroupData[{
+Cell[3096, 96, 115, 2, 51, "Input"],
+Cell[3214, 100, 63, 2, 68, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+
