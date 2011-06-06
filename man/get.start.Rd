@@ -35,8 +35,8 @@ get.start()
   Haldane, J. B. S. and Waddington, C. H. (1931) Inbreeding and
   linkage. \emph{Genetics} \bold{16}, 357--374.
 
-  Broman, K. W. The genomes of recombinant inbred lines.
-  \emph{Genetics}, in press.
+Broman, K. W. (2005) The genomes of recombinant inbred
+lines. \emph{Genetics} \bold{169}, 1133--1146.
 }
 
 \seealso{ \code{\link{count.absorb}} }

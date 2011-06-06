@@ -35,8 +35,8 @@ get.ril.coinc(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
 }
                     
 \references{
-  Broman, K. W. The genomes of recombinant inbred lines.
-  \emph{Genetics}, in press.
+Broman, K. W. (2005) The genomes of recombinant inbred
+lines. \emph{Genetics} \bold{169}, 1133--1146.
 }
 
 \seealso{ \code{\link{get.ril.prob}} }
