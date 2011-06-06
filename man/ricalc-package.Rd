@@ -7,8 +7,7 @@
   A brief introduction to the contents of the R/ricalc package.
 }
 
-\section{Stuff for the gamma model}
-{
+\section{Stuff for the gamma model}{
   \itemize{
     \item \code{\link{coinc.gam}}:  Calculate the three-point
     coincidence function for the gamma model.
@@ -19,8 +18,7 @@
   }
 }
 
-\section{Data}
-{
+\section{Data}{
   \itemize{
      \item \code{\link{mouseL}}: Estimated genetic lengths of mouse chromosomes.
 
@@ -38,8 +36,7 @@
   }
 }
 
-\section{Symbolic data}
-{
+\section{Symbolic data}{
   \itemize{
      \item \code{\link{fulltm}}: Generation-to-generation transition
      matrices for 2- and 4-way RIL by selfing and by sibling mating (in
@@ -51,8 +48,7 @@
 
 }
 
-\section{Counting and enumerating parental types}
-{
+\section{Counting and enumerating parental types}{
   \itemize{
      \item \code{\link{lookup}}: Lookup tables for parental types in the
      generation of multiple-strain RIL, representing the 
@@ -65,8 +61,7 @@
   }
 }   
 
-\section{Calculations and simulations}
-{
+\section{Calculations and simulations}{
   \itemize{
      \item \code{\link{sim.ri}}: Simulate multiple-strain RIL.
 
