@@ -1,7 +1,7 @@
 
 Revision history for the R/ricalc package
 ----------------------------------------------------------------------
-copyright (c) 2003-2009, Karl W Broman
+copyright (c) 2003-2011, Karl W Broman
 
     The R/ricalc package is free software; you can redistribute it
     and/or modify it under the terms of the GNU General Public

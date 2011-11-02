@@ -1,2 +1,23 @@
-# Export all names
-exportPattern(".")
+# Export functions
+export(adjust.order, alternates,
+       coinc.gam, convert.full.tm,
+       count.absorb, create.parent,
+       cross, exchangeg,
+       get.full.tm, get.full.tm.symbolic,
+       get.meiosis.tm, get.meiosis.tm.symbolic,
+       get.ril.coinc, get.ril.prob,
+       get.start, gtypes,
+       imf.gam, lengthHet,
+       lennum.het, meiosis, 
+       meiosis.sub, mf.gam,
+       modifyL, my.kronecker,
+       my.kronecker.symbolic, nubreak,
+       read.full.tm.symbolic, read.meiosis.tm.symbolic,
+       reverseg, ricalcversion,
+       sim.ri, where.het,
+       write.full.tm.symbolic, write.meiosis.tm.symbolic,
+       write.sparse)
+
+# imports
+importFrom(stats, pgamma, integrate, uniroot, runif,
+           rpois, qpois, dpois, rbinom)
