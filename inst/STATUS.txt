@@ -18,6 +18,13 @@ copyright (c) 2003-2009, Karl W Broman
 http://www.biostat.wisc.edu/~kbroman/software
 ----------------------------------------------------------------------
 
+Version 0.54-1, 11/2/2011:
+
+  Added NAMESPACE
+
+  Re-saved .RData data sets (to reduce space)
+
+
 Version 0.53-1, 6/6/2011:
 
   Update license to GPL-3.
