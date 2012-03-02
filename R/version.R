@@ -2,8 +2,8 @@
 #
 # version.R
 #
-# copyright (c) 2011, Karl W Broman
-# last modified June, 2011
+# copyright (c) 2011-2012, Karl W Broman
+# last modified Mar, 2012
 # first written June, 2011
 #
 #     This program is free software; you can redistribute it and/or
@@ -25,8 +25,10 @@
 ricalcversion <-
 function()
 {
-  u <- strsplit(library(help=ricalc)[[3]][[1]][2]," ")[[1]]
-  u[length(u)]
+  version <- unlist(packageVersion("ricalc"))
+
+  # make it like #.#-#
+  paste(c(version,".","-")[c(1,4,2,5,3)], collapse="")
 }
 
 # end of version.R
