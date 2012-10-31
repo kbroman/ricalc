@@ -2,8 +2,8 @@
 #
 # sim_ril.R
 #
-# copyright (c) 2004-9, Karl W Broman
-# last modified Apr, 2009
+# copyright (c) 2004-2012, Karl W Broman
+# last modified Oct, 2012
 # first written May, 2004
 #
 #     This program is free software; you can redistribute it and/or
@@ -61,7 +61,7 @@ function(L, m=10, obligate.chiasma=FALSE)
     if(!obligate.chiasma)  # no obligate chiasma
       n.xo <- rpois(1,Lstar/100)
     else {
-      up <- qpois(1e-14,Lstar/50,lower=FALSE)
+      up <- qpois(1e-14,Lstar/50,lower.tail=FALSE)
       p <- dpois(1:up,Lstar/50)/ppois(0,Lstar/50)
       n.chi <- sample(1:up,1,prob=p)
       n.xo <- rbinom(1,n.chi,0.5)
@@ -84,7 +84,7 @@ function(L, m=10, obligate.chiasma=FALSE)
       n.xo <- rbinom(1,length(chi.loc),0.5)
       if(n.xo==0) xo <- NULL
       else if(length(chi.loc)==1) xo <- chi.loc
-      else xo <- sort(sample(chi.loc,n.xo,repl=FALSE))
+      else xo <- sort(sample(chi.loc,n.xo,replace=FALSE))
     }
   }
     

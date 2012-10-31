@@ -2,8 +2,8 @@
 #
 # full_tm.R
 #
-# copyright (c) 2004, Karl W Broman
-# last modified May, 2004
+# copyright (c) 2004-2012, Karl W Broman
+# last modified Oct, 2012
 # first written May, 2004
 #
 #     This program is free software; you can redistribute it and/or
@@ -282,14 +282,14 @@ function(file, n.strains=c("2","4"), type=c("selfing","sibmating"),
   output <- get.full.tm.symbolic(n.strains, type, chrtype, n.loci)
   n.output <- length(output)
 
-  write("tm = {",file=file,ncol=1,append=FALSE)
+  write("tm = {",file=file,ncolumns=1,append=FALSE)
   for(i in 1:n.output) {
     string <- paste("{ ",paste(output[[i]],collapse=",")," }",sep="")
     if(i != n.output)
       string <- paste(string,",",sep="")
-    write(string,file=file,ncol=1,append=TRUE)
+    write(string,file=file,ncolumns=1,append=TRUE)
   }
-  write("}",file=file,ncol=1,append=TRUE)
+  write("}",file=file,ncolumns=1,append=TRUE)
 }
 
 ######################################################################

@@ -2,8 +2,8 @@
 #
 # gamma.R
 #
-# copyright (c) 2004, Karl W Broman
-# last modified May, 2004
+# copyright (c) 2004-2012, Karl W Broman
+# last modified Oct, 2012
 # first written May, 2004
 #
 #     This program is free software; you can redistribute it and/or
@@ -41,7 +41,7 @@ function(d, nu=1, tol=1e-12)
 
   d <- d/100
   mf.gam.sub <- function(y,NU)
-    pgamma(y,shape=NU,rate=2*NU,lower=FALSE)
+    pgamma(y,shape=NU,rate=2*NU,lower.tail=FALSE)
 
   z <- d
   for(i in seq(along=d))
