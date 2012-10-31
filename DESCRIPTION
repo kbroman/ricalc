@@ -1,6 +1,6 @@
 Package: ricalc
-Version: 0.54-2
-Date: 2 Mar 2012
+Version: 0.55-1
+Date: 30 Oct 2012
 Title: Calculations for recombinant inbred lines
 Author: Karl W Broman <kbroman@biostat.wisc.edu>
 Maintainer: Karl W Broman <kbroman@biostat.wisc.edu>

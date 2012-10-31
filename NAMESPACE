@@ -18,6 +18,8 @@ export(adjust.order, alternates,
        write.full.tm.symbolic, write.meiosis.tm.symbolic,
        write.sparse)
 
+export(sim.ped, genAILped, convert2gen)
+
 # imports
 importFrom(stats, pgamma, integrate, uniroot, runif,
            rpois, qpois, dpois, rbinom)

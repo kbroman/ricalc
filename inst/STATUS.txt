@@ -18,6 +18,13 @@ copyright (c) 2003-2012, Karl W Broman
 http://www.biostat.wisc.edu/~kbroman/software
 ----------------------------------------------------------------------
 
+Version 0.55, 10/30/2012:
+
+  Add funtions sim.ped, genAILped and convert2gen, for simulating data
+  on a general pedigree (with the main aim being to simulate AIL
+  data).
+
+
 Version 0.54-2, 3/2/2012:
 
   Revised ricalcversion() to use packageVersion().
