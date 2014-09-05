@@ -1,4 +1,4 @@
-### R/ricalc
+## R/ricalc
 
 [![Build Status](https://travis-ci.org/kbroman/ricalc.png?branch=master)](https://travis-ci.org/kbroman/ricalc)
 
