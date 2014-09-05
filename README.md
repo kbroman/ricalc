@@ -6,7 +6,7 @@ copyright (c) 2003-2012, Karl W Broman
 
 [R/ricalc](https://github.com/kbroman/ricalc) is an R package for
 calculating two- and three-locus probabilities in multiple-strain
-recombinant inbred lines, and simulating such lines.
+recombinant inbred lines, and for simulating such lines.
 
 ### License
 
