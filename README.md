@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/kbroman/ricalc.png?branch=master)](https://travis-ci.org/kbroman/ricalc)
 
-copyright (c) 2003-2012, [Karl W Broman](http://kbroman.org)
+[Karl W Broman](http://kbroman.org)
 
 [R/ricalc](https://github.com/kbroman/ricalc) is an R package for
 calculating two- and three-locus probabilities in multiple-strain
