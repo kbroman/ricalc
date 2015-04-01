@@ -1,6 +1,6 @@
 ## R/ricalc
 
-[![Build Status](https://travis-ci.org/kbroman/ricalc.png?branch=master)](https://travis-ci.org/kbroman/ricalc)
+[![Build Status](https://travis-ci.org/kbroman/ricalc.svg?branch=master)](https://travis-ci.org/kbroman/ricalc)
 
 [Karl W Broman](http://kbroman.org)
 
