@@ -1,4 +1,3 @@
-
 Revision history for the R/ricalc package
 ----------------------------------------------------------------------
 copyright (c) 2003-2012, Karl W Broman
@@ -6,16 +5,16 @@ copyright (c) 2003-2012, Karl W Broman
     The R/ricalc package is free software; you can redistribute it
     and/or modify it under the terms of the GNU General Public
     License, version 3, as published by the Free Software Foundation.
-    
+
     This program is distributed in the hope that it will be useful,
     but without any warranty; without even the implied warranty of
     merchantability or fitness for a particular purpose.  See the GNU
     General Public License for more details.
-    
+
     A copy of the GNU General Public License, version 3, is available
     at http://www.r-project.org/Licenses/GPL-3
 
-http://www.biostat.wisc.edu/~kbroman/software
+https://github.com/kbroman/ricalc
 ----------------------------------------------------------------------
 
 Version 0.55, 10/30/2012:
@@ -70,7 +69,7 @@ Version 0.51, 5/10/2006:
 
   Added an attribute to the results of sim.ri() indicating the number
   of breakpoints of the first of the two individuals in each
-  generation. 
+  generation.
 
 
 Version 0.50, 11/18/2004:
