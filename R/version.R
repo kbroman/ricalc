@@ -25,7 +25,7 @@
 ricalcversion <-
 function()
 {
-  version <- unlist(packageVersion("ricalc"))
+  version <- unlist(utils::packageVersion("ricalc"))
 
   # make it like #.#-#
   paste(c(version,".","-")[c(1,4,2,5,3)], collapse="")

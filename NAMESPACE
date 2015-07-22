@@ -8,7 +8,7 @@ export(adjust.order, alternates,
        get.ril.coinc, get.ril.prob,
        get.start, gtypes,
        imf.gam, lengthHet,
-       lennum.het, meiosis, 
+       lennum.het, meiosis,
        meiosis.sub, mf.gam,
        modifyL, my.kronecker,
        my.kronecker.symbolic, nubreak,
@@ -22,4 +22,4 @@ export(sim.ped, genAILped, convert2gen)
 
 # imports
 importFrom(stats, pgamma, integrate, uniroot, runif,
-           rpois, qpois, dpois, rbinom)
+           rpois, qpois, dpois, rbinom, ppois)

@@ -1,10 +1,11 @@
 Package: ricalc
-Version: 0.55-1
-Date: 30 Oct 2012
-Title: Calculations for recombinant inbred lines
+Version: 0.55-2
+Date: 2015-07-22
+Title: Calculations for Recombinant Inbred Lines
 Author: Karl W Broman <kbroman@biostat.wisc.edu>
 Maintainer: Karl W Broman <kbroman@biostat.wisc.edu>
 Description: Calculate two- and three-locus probabilities in multiple-strain recombinant inbred lines, and simulate such lines.
-Depends: R (>= 2.10.1), stats
+Depends: R (>= 2.10.1)
+Imports: stats, utils
 License: GPL-3
 URL: https://github.com/kbroman/ricalc

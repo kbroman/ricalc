@@ -1,6 +1,6 @@
 Revision history for the R/ricalc package
 ----------------------------------------------------------------------
-copyright (c) 2003-2012, Karl W Broman
+copyright (c) 2003-2015, Karl W Broman
 
     The R/ricalc package is free software; you can redistribute it
     and/or modify it under the terms of the GNU General Public
@@ -17,62 +17,67 @@ copyright (c) 2003-2012, Karl W Broman
 https://github.com/kbroman/ricalc
 ----------------------------------------------------------------------
 
-Version 0.55, 10/30/2012:
+Version 0.55-2, 2015-07-22:
+
+  Small changes to avoid warnings in R CMD check.
+
+
+Version 0.55, 2012-10-30:
 
   Add funtions sim.ped, genAILped and convert2gen, for simulating data
   on a general pedigree (with the main aim being to simulate AIL
   data).
 
 
-Version 0.54-2, 3/2/2012:
+Version 0.54-2, 2012-03-02:
 
   Revised ricalcversion() to use packageVersion().
 
 
-Version 0.54-1, 11/2/2011:
+Version 0.54-1, 2011-11-02:
 
   Added NAMESPACE
 
   Re-saved .RData data sets (to reduce space)
 
 
-Version 0.53-1, 6/6/2011:
+Version 0.53-1, 2011-06-06:
 
   Update license to GPL-3.
 
   Add overview help file.
 
 
-Version 0.52-3, 10/26/2009:
+Version 0.52-3, 2009-10-26:
 
   Fixed links in help files.
 
 
-Version 0.52-2, 4/22/2009:
+Version 0.52-2, 2009-04-22:
 
   Fixed a couple of warning messages that showed up in the latest
   version of R's package checks.  Changed the name of the function
   length.het to lengthHet
 
 
-Version 0.52-1, 10/9/2007:
+Version 0.52-1, 2007-10-09:
 
   Fixed a bug in get.meiosis.tm.symbolic
 
 
-Version 0.51-3, 10/9/2007:
+Version 0.51-3, 2007-10-09:
 
   Fixed some slight problems in the help files.
 
 
-Version 0.51, 5/10/2006:
+Version 0.51, 2006-05-10:
 
   Added an attribute to the results of sim.ri() indicating the number
   of breakpoints of the first of the two individuals in each
   generation.
 
 
-Version 0.50, 11/18/2004:
+Version 0.50, 2004-11-18:
 
   A brand-new package.
 
