@@ -60,7 +60,7 @@ write.full.tm.symbolic(file, n.strains=c("2","4"), type=c("selfing","sibmating")
          chrtype=c("A","X"), n.loci=c("2","3"))
 write.meiosis.tm.symbolic(file, n.strains=c("2","4"), chrtype=c("A","X"),
          n.loci=c("2","3"))
-write.sparse(file,n.strains=c("2","4"),type=c("selfing","sibmating"),
+write.sparse(file=NULL,n.strains=c("2","4"),type=c("selfing","sibmating"),
          chrtype=c("A","X"),n.loci=c("2","3"), where=c("math","perl"))
 }
 

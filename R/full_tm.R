@@ -403,7 +403,7 @@ function(file,n.strains=c("2","4"),type=c("selfing","sibmating"),
     }
   }
 
-  if(missing(file))
+  if(is.null(file))
     return(list(fulltm=fulltm,rhs=rhs,states=states,start0=start0,absorb=absorb))
   
   if(where == "math") {
