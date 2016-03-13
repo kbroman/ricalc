@@ -34,7 +34,7 @@ get.full.tm(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
 \examples{
   fulltm2self2 <- get.full.tm(0.1)
 }
-                    
+
 \references{
   Haldane, J. B. S. and Waddington, C. H. (1931) Inbreeding and
   linkage. \emph{Genetics} \bold{16}, 357--374.
@@ -44,7 +44,7 @@ lines. \emph{Genetics} \bold{169}, 1133--1146.
 }
 
 \seealso{ \code{\link{get.full.tm.symbolic}},
-  \code{\link{fulltm}}, \code{\link{convert.full.tm}} 
+  \code{\link{fulltm}}, \code{\link{convert.full.tm}}
 }
 
 \keyword{datagen}

@@ -22,8 +22,8 @@ mf.gam(d, nu=1, tol=1e-12)
 
 \details{
   Uses the function \code{\link[stats]{integrate}} to do numerical
-  integration. 
-}  
+  integration.
+}
 
 \value{
   Vector of recombination fractions, of same length as the input \code{d}.
@@ -34,7 +34,7 @@ mf.gam(d, nu=1, tol=1e-12)
 \examples{
 mf.gam(0:25, 11.3)
 }
-                    
+
 \references{
 Zhao, H. and Speed, T. P. (1996) On genetic map
 functions. \emph{Genetics} \bold{142}, 1369--1377.

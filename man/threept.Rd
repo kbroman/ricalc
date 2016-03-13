@@ -11,7 +11,7 @@
   lines formed by sibling mating.  A and X indicate autosome and the X
   chromosome.  I and NI indicate strong crossover interference (gamma
   model with \eqn{\nu=11.3}{nu=11.3}) and no interference.
-} 
+}
 
 \usage{
 data(threept.AI)
@@ -32,7 +32,7 @@ data(threept.XNI)
 }
 
 \source{
-  These were calculated using perl programs included with this package. 
+  These were calculated using perl programs included with this package.
 }
 
 \examples{

@@ -3,14 +3,14 @@
 
 \title{Look-up tables for multi-locus parental types}
 
-\description{ 
+\description{
   Look-up tables for multi-locus parental types in the generation of
   2-way or 4-way recombinant inbred lines by selfing, sibling mating
   with the X chromosome, or sibling mating with an autosome, and for
   cases of two or three loci.  The tables connect all possible parental
   types to the prototypical versions after collapsing according to
   various symmetries.
-} 
+}
 
 \usage{
 data(lookup)

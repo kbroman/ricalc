@@ -22,12 +22,12 @@ coinc.gam(r, nu=1, tol=1e-12)
 
 \details{
   Uses the functions \code{\link{mf.gam}} and
-  \code{\link{imf.gam}}. 
-}  
+  \code{\link{imf.gam}}.
+}
 
 \value{
   Vector of three-point coincidences, of same length as the input
-  \code{r}. 
+  \code{r}.
 }
 
 \author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
@@ -35,7 +35,7 @@ coinc.gam(r, nu=1, tol=1e-12)
 \examples{
 coinc.gam(seq(0.01,0.49,by=0.01), 11.3)
 }
-                    
+
 \references{
 Zhao, H. and Speed, T. P. (1996) On genetic map
 functions. \emph{Genetics} \bold{142}, 1369--1377.

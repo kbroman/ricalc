@@ -31,7 +31,7 @@ sim.ped(pedigree, L, sexsp=1, xchr=FALSE, m=10, obligate.chiasma=FALSE)
   Meiosis is simulated by the chi-square model (see Zhao et al. 1995),
   with the possibility of requiring an obligate chiasma on the
   four-strand bundle at meiosis.
- 
+
   The \code{pedigree} matrix must have columns named \code{"id"},
   \code{"sex"}, \code{"mom"}/\code{"dam"} and
   \code{"dad"}/\code{"sire"}.  Other columns are ignored.
@@ -39,7 +39,7 @@ sim.ped(pedigree, L, sexsp=1, xchr=FALSE, m=10, obligate.chiasma=FALSE)
   the identifiers for the mom and dad.  Each individual must have either
   both parents in the matrix or neither.
 
-}  
+}
 
 \value{
   The output is a list with length equal to the number of rows in
@@ -48,7 +48,7 @@ sim.ped(pedigree, L, sexsp=1, xchr=FALSE, m=10, obligate.chiasma=FALSE)
   rows:  The first row consists of the locations of exchanges
   (0 and \code{L} are included); the second row
   contains the allele (coded 1, 2, \dots, no. founders) in the interval to the
-  left. 
+  left.
 }
 
 \author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
@@ -57,7 +57,7 @@ sim.ped(pedigree, L, sexsp=1, xchr=FALSE, m=10, obligate.chiasma=FALSE)
 ailped <- genAILped(ngen=5, npairs=5, sibship.size=2)
 aildat <- sim.ped(ailped, 100)
 }
-                    
+
 \references{
   Zhao, H., Speed, T. P. and McPeek, M. S. (1995) Statistical analysis of crossover
   interference using the chi-square model. \emph{Genetics} \bold{139},

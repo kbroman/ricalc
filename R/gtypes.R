@@ -9,15 +9,15 @@
 #     This program is free software; you can redistribute it and/or
 #     modify it under the terms of the GNU General Public License,
 #     version 3, as published by the Free Software Foundation.
-# 
+#
 #     This program is distributed in the hope that it will be useful,
 #     but without any warranty; without even the implied warranty of
 #     merchantability or fitness for a particular purpose.  See the GNU
 #     General Public License, version 3, for more details.
-# 
+#
 #     A copy of the GNU General Public License, version 3, is available
 #     at http://www.r-project.org/Licenses/GPL-3
-# 
+#
 # Part of the R/ricalc package
 # Contains: gtypes, alternates, reverseg, exchangeg, adjust.order
 #
@@ -34,7 +34,7 @@
 # n.loci = number of loci (2 or 3)
 #
 ######################################################################
-gtypes <- 
+gtypes <-
 function(n.strains=c("2","4"), type=c("sibpair","ind","hap"),
          chrtype=c("A","X"), n.loci=c("2","3"), use.symmetry=TRUE,
          verbose=TRUE)
@@ -119,9 +119,9 @@ function(n.strains=c("2","4"), type=c("sibpair","ind","hap"),
     }
     pair <- upair
   }
-    
+
   pair
-}  
+}
 
 
 ######################################################################
@@ -159,7 +159,7 @@ function(pat, n.strains=c("2","4"), chrtype=c("A","X"))
     return(sort(unique(pat)))
   }
 }
-    
+
 
 ######################################################################
 # reverseg
@@ -178,10 +178,10 @@ function(string)
   else { # a sib pair
     string <- unlist(strsplit(string," x "))
     for(i in 1:length(string)) {
-      if(length(grep("\\|",string[i]))>0) 
+      if(length(grep("\\|",string[i]))>0)
         string[i] <- paste(sapply(strsplit(unlist(strsplit(string[i],"\\|")),""),
                                   function(a) paste(rev(a),collapse="")),collapse="|")
-      else 
+      else
         string[i] <- paste(rev(unlist(strsplit(string[i],""))),collapse="")
     }
     return(paste(unlist(string),collapse=" x "))

@@ -3,9 +3,9 @@
 
 \title{Estimated genetic lengths of mouse chromosomes}
 
-\description{ 
+\description{
   Estimated genetic lengths (in cM) of mouse chromosomes.
-} 
+}
 
 \usage{data(mouseL)}
 
@@ -15,7 +15,7 @@
 }
 
 \source{
-  Mouse Genome Informatics, 
+  Mouse Genome Informatics,
   \url{http://www.informatics.jax.org/mgihome/other/mouse_facts1.shtml}
 }
 

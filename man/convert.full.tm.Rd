@@ -24,8 +24,8 @@ convert.full.tm(full.tm)
 
 \author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
 
-                    
+
 \seealso{ \code{\link{get.full.tm}},
-  \code{\link{get.full.tm.symbolic}} } 
+  \code{\link{get.full.tm.symbolic}} }
 
 \keyword{manip}

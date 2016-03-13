@@ -27,7 +27,7 @@ convert2gen(xodat, map)
   11, 12 and 22.  Otherwise, they are converted to binary codes.  For
   example, with possible alleles 1, 2, and 3, an individual with
   genotype a,b will be given the value \eqn{2^(a-1) + 2^(b-1)}.
-}  
+}
 
 \value{
   The output is a matrix with \code{length(xodat)} rows and
@@ -43,7 +43,7 @@ map <- seq(0, 100, by=10)
 names(map) <- paste("M", 1:length(map), sep="")
 ailgen <- convert2gen(aildat, map)
 }
-                    
+
 \seealso{ \code{\link{sim.ped}}, \code{\link{genAILped}} }
 
 \keyword{datagen}

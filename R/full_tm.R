@@ -9,15 +9,15 @@
 #     This program is free software; you can redistribute it and/or
 #     modify it under the terms of the GNU General Public License,
 #     version 3, as published by the Free Software Foundation.
-# 
+#
 #     This program is distributed in the hope that it will be useful,
 #     but without any warranty; without even the implied warranty of
 #     merchantability or fitness for a particular purpose.  See the GNU
 #     General Public License, version 3, for more details.
-# 
+#
 #     A copy of the GNU General Public License, version 3, is available
 #     at http://www.r-project.org/Licenses/GPL-3
-# 
+#
 # Part of the R/ricalc package
 # Contains:  get.full.tm, my.kronecker, get.full.tm.symbolic,
 #            my.kronecker.symbolic, write.sparse, convert.full.tm
@@ -38,7 +38,7 @@
 # n.loci = number of loci (2 or 3)
 #
 ######################################################################
-get.full.tm <- 
+get.full.tm <-
 function(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
          chrtype=c("A","X"), n.loci=c("2","3"))
 {
@@ -59,7 +59,7 @@ function(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
   data(lookup,envir=environment()) # load lookup locally within function
   if(type=="selfing")
     lookup <- lookup[[paste(n.strains,"self",n.loci,sep="")]]
-  else 
+  else
     lookup <- lookup[[paste(n.strains,"sib",chrtype,n.loci,sep="")]]
 
   # unique parental types
@@ -89,7 +89,7 @@ function(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
       }
     }
 
-    # collapse 
+    # collapse
     names(temp) <- adjust.order(names(temp),chrtype)
     names(temp) <- lookup[names(temp)]
 
@@ -98,7 +98,7 @@ function(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
     if(length(temp) != n.utemp) {
       utemp <- rep(0,n.utemp)
       names(utemp) <- utempnam
-      for(j in 1:n.utemp) 
+      for(j in 1:n.utemp)
         utemp[j] <- sum(temp[names(temp)==utempnam[j]])
       temp <- utemp
     }
@@ -165,7 +165,7 @@ function(a, b, sep="|")
 # n.loci = number of loci (2 or 3)
 #
 ######################################################################
-get.full.tm.symbolic <- 
+get.full.tm.symbolic <-
 function(n.strains=c("2","4"), type=c("selfing","sibmating"),
          chrtype=c("A","X"), n.loci=c("2","3"))
 {
@@ -186,7 +186,7 @@ function(n.strains=c("2","4"), type=c("selfing","sibmating"),
   data(lookup,envir=environment()) # load lookup locally within function
   if(type=="selfing")
     lookup <- lookup[[paste(n.strains,"self",n.loci,sep="")]]
-  else 
+  else
     lookup <- lookup[[paste(n.strains,"sib",chrtype,n.loci,sep="")]]
 
   # unique parental types
@@ -216,7 +216,7 @@ function(n.strains=c("2","4"), type=c("selfing","sibmating"),
       }
     }
 
-    # collapse 
+    # collapse
     names(temp) <- adjust.order(names(temp),chrtype)
     names(temp) <- lookup[names(temp)]
 
@@ -225,7 +225,7 @@ function(n.strains=c("2","4"), type=c("selfing","sibmating"),
     if(length(temp) != n.utemp) {
       utemp <- rep(0,n.utemp)
       names(utemp) <- utempnam
-      for(j in 1:n.utemp) 
+      for(j in 1:n.utemp)
         utemp[j] <- paste(temp[names(temp)==utempnam[j]],collapse=" + ")
       temp <- utemp
     }
@@ -238,7 +238,7 @@ function(n.strains=c("2","4"), type=c("selfing","sibmating"),
 
 ######################################################################
 # my.kronecker.symbolic
-# 
+#
 # Symbolic version of my.kronecker
 #
 ######################################################################
@@ -266,7 +266,7 @@ function(a, b, sep="|")
 # n.loci = number of loci (2 or 3)
 #
 ######################################################################
-write.full.tm.symbolic <- 
+write.full.tm.symbolic <-
 function(file, n.strains=c("2","4"), type=c("selfing","sibmating"),
          chrtype=c("A","X"), n.loci=c("2","3"))
 {
@@ -303,7 +303,7 @@ function(file, n.strains=c("2","4"), type=c("selfing","sibmating"),
 # n.loci = number of loci (2 or 3)
 #
 ######################################################################
-read.full.tm.symbolic <- 
+read.full.tm.symbolic <-
 function(file, n.strains=c("2","4"), type=c("selfing","sibmating"),
          chrtype=c("A","X"), n.loci=c("2","3"))
 {
@@ -342,7 +342,7 @@ function(file, n.strains=c("2","4"), type=c("selfing","sibmating"),
 # of the limiting RIL probabilities
 ######################################################################
 write.sparse <-
-function(file,n.strains=c("2","4"),type=c("selfing","sibmating"),
+function(file=NULL,n.strains=c("2","4"),type=c("selfing","sibmating"),
          chrtype=c("A","X"),n.loci=c("2","3"), where=c("math","perl"))
 {
   n.strains <- match.arg(n.strains)
@@ -405,7 +405,7 @@ function(file,n.strains=c("2","4"),type=c("selfing","sibmating"),
 
   if(is.null(file))
     return(list(fulltm=fulltm,rhs=rhs,states=states,start0=start0,absorb=absorb))
-  
+
   if(where == "math") {
 
     fulltm <- lapply(fulltm,function(a,b) { names(a) <- match(names(a),b)
@@ -422,7 +422,7 @@ function(file,n.strains=c("2","4"),type=c("selfing","sibmating"),
     }
     write(paste("}, {",length(fulltm),",",length(fulltm),"}]\n",sep=""),
           file, append=TRUE)
-    
+
     write("b = {",file,append=TRUE)
     for(i in 1:nrow(rhs)) {
       string <- paste("{",paste(rhs[i,],collapse=","),"}",sep="")
@@ -430,9 +430,9 @@ function(file,n.strains=c("2","4"),type=c("selfing","sibmating"),
       write(string,file,append=TRUE)
     }
     write("}\n",file,append=TRUE)
-    
+
     write(paste("start =", match(start0,names(fulltm))),file,append=TRUE)
-    
+
   }
   else { # write to perl
     write(paste("start",start0,sep=","),file,append=FALSE)
@@ -442,15 +442,15 @@ function(file,n.strains=c("2","4"),type=c("selfing","sibmating"),
     for(i in 1:length(fulltm)) {
       write(paste(names(fulltm)[i],length(fulltm[[i]]),sep=","),file,append=TRUE)
 
-      for(j in 1:length(fulltm[[i]])) 
+      for(j in 1:length(fulltm[[i]]))
         write(paste(names(fulltm[[i]])[j],fulltm[[i]][j],sep=","),file,append=TRUE)
 
     }
-    
+
     write(paste("rhs", ncol(rhs),sep=","),file,append=TRUE)
     for(i in 1:ncol(rhs)) {
       write(paste(colnames(rhs)[i],nrow(rhs),sep=","),file,append=TRUE)
-      for(j in 1:nrow(rhs)) 
+      for(j in 1:nrow(rhs))
         write(paste(rownames(rhs)[j],rhs[j,i],sep=","),file,append=TRUE)
     }
   }

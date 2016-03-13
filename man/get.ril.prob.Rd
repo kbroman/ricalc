@@ -26,12 +26,12 @@ get.ril.prob(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
 
 \value{
   A vector of probabilities, with absorbing states in their reduced
-  form. 
+  form.
 }
 
 \author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
 
-                    
+
 \references{
   Haldane, J. B. S. and Waddington, C. H. (1931) Inbreeding and
   linkage. \emph{Genetics} \bold{16}, 357--374.

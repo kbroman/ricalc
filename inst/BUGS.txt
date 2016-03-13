@@ -1,4 +1,3 @@
-
 Bugs and bug fixes for R/ricalc
 ----------------------------------------------------------------------
 This file is intended to contain all known bugs in the R/ricalc
@@ -14,6 +13,6 @@ many details as possible and possibly example data, to Karl Broman,
 Version 0.50
 
     None yet identified
-       
+
 ----------------------------------------------------------------------
 end of BUGS.txt

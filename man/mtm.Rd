@@ -4,11 +4,11 @@
 
 \title{Symbolic transition matrices for meiosis}
 
-\description{ 
+\description{
   Transition matrices for meiosis: the probabilities of the possible
   haplotypes for a meiotic product from a given parental type.  These
   are symbolic versions.
-} 
+}
 
 \usage{
 data(mtm)
@@ -25,7 +25,7 @@ data(mtm)
 \source{
   These were formed using the internal functions
   \code{write.meiosis.tm.symbolic} and \code{read.meiosis.tm.symbolic},
-  using mathematica to simplify the expressions. 
+  using mathematica to simplify the expressions.
 }
 
 \examples{

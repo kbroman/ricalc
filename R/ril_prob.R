@@ -1,4 +1,4 @@
-#####################################################################
+######################################################################
 #
 # ril_prob.R
 #
@@ -9,15 +9,15 @@
 #     This program is free software; you can redistribute it and/or
 #     modify it under the terms of the GNU General Public License,
 #     version 3, as published by the Free Software Foundation.
-# 
+#
 #     This program is distributed in the hope that it will be useful,
 #     but without any warranty; without even the implied warranty of
 #     merchantability or fitness for a particular purpose.  See the GNU
 #     General Public License, version 3, for more details.
-# 
+#
 #     A copy of the GNU General Public License, version 3, is available
 #     at http://www.r-project.org/Licenses/GPL-3
-# 
+#
 # Part of the R/ricalc package
 # Contains:  get.ril.prob, get.start, count.absorb, get.ril.coinc
 #
@@ -47,7 +47,7 @@ function(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
   fulltm <- get.full.tm(r,coinc,n.strains,type,chrtype,n.loci)
   if(verbose) cat(" -Reforming transition matrix\n")
   fulltm <- convert.full.tm(fulltm)
-  
+
   start0 <- get.start(n.strains,type,chrtype,n.loci)
   absorb <- count.absorb(n.strains,type,chrtype,n.loci)
   absorbnam <- names(absorb)
@@ -111,7 +111,7 @@ function(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
 #
 # determine starting state for the Markov chain
 ######################################################################
-get.start <- 
+get.start <-
 function(n.strains=c("2","4"),type=c("selfing","sibmating"),
          chrtype=c("A","X"),n.loci=c("2","3"))
 {
@@ -190,11 +190,11 @@ function(n.strains=c("2","4"),type=c("selfing","sibmating"),
   type <- match.arg(type)
   chrtype <- match.arg(chrtype)
   n.loci <- match.arg(n.loci)
-  
+
   data(lookup,envir=environment())
   if(type=="selfing")
     lookup <- lookup[[paste(n.strains,"self",n.loci,sep="")]]
-  else 
+  else
     lookup <- lookup[[paste(n.strains,"sib",chrtype,n.loci,sep="")]]
 
   z <- x <- unique(lookup)

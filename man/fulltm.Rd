@@ -3,10 +3,10 @@
 
 \title{Symbolic generation-to-generation transition matrices}
 
-\description{ 
+\description{
   Symbolic generation-to-generation transition matrices for the
   process of creating multiple strain recombinant inbred lines.
-} 
+}
 
 \usage{data(fulltm)}
 

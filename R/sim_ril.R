@@ -9,15 +9,15 @@
 #     This program is free software; you can redistribute it and/or
 #     modify it under the terms of the GNU General Public License,
 #     version 3, as published by the Free Software Foundation.
-# 
+#
 #     This program is distributed in the hope that it will be useful,
 #     but without any warranty; without even the implied warranty of
 #     merchantability or fitness for a particular purpose.  See the GNU
 #     General Public License, version 3, for more details.
-# 
+#
 #     A copy of the GNU General Public License, version 3, is available
 #     at http://www.r-project.org/Licenses/GPL-3
-# 
+#
 # Part of the R/ricalc package
 # Contains: meiosis.sub, meiosis, create.parent, where.het,
 #           lengthHet, sim.ri, cross, lennum.het, modifyL, nubreak
@@ -25,7 +25,7 @@
 ######################################################################
 
 ######################################################################
-# meiosis.sub 
+# meiosis.sub
 #
 # Simulate the locations of crossovers on a meiotic product
 # via the chi-square model (m=0 corresponds to no interference)
@@ -40,7 +40,7 @@ function(L, m=10, obligate.chiasma=FALSE)
 {
   if(obligate.chiasma) { # adjust mean no. chiasmata
     if(L <= 50) stop("L must be > 50 cM")
-    if(m==0) f <- function(Lstar,f.L,f.m=0) f.L-Lstar/(1-exp(-Lstar/50)) 
+    if(m==0) f <- function(Lstar,f.L,f.m=0) f.L-Lstar/(1-exp(-Lstar/50))
     else {
       f <- function(Lstar,f.L,f.m=0)
         {
@@ -87,7 +87,7 @@ function(L, m=10, obligate.chiasma=FALSE)
       else xo <- sort(sample(chi.loc,n.xo,replace=FALSE))
     }
   }
-    
+
   if(length(xo) == 0) xo <- NULL
   xo
 }
@@ -96,9 +96,9 @@ function(L, m=10, obligate.chiasma=FALSE)
 # create.parent
 #
 # create a parental individual
-# 
+#
 # L = chromosome length
-# allele = vector of length 1 or two 
+# allele = vector of length 1 or two
 ######################################################################
 create.parent <-
 function(L, allele=1)
@@ -106,7 +106,7 @@ function(L, allele=1)
   if(length(allele) == 1) allele <- rep(allele,2)
   if(length(allele) != 2)
     stop("allele should be of length 1 or 2")
-  
+
   list(mat=rbind(c(0,L),allele[1]),
        pat=rbind(c(0,L),allele[2]))
 }
@@ -130,7 +130,7 @@ function(parent, m=10, obligate.chiasma=FALSE)
 
   else {
     for(i in 1:length(product)) {
-      if(i == 1) 
+      if(i == 1)
         result <- parent[[a]][,parent[[a]][1,]<product[1],drop=FALSE]
       else {
         temp <- parent[[a]][1,]>=product[i-1] & parent[[a]][1,]<product[i]
@@ -147,7 +147,7 @@ function(parent, m=10, obligate.chiasma=FALSE)
   # clean out excess stuff in the result
   if(ncol(result)>2) {
     keep <- rep(TRUE,ncol(result))
-    for(i in 2:(ncol(result)-1)) 
+    for(i in 2:(ncol(result)-1))
       if(result[2,i] == result[2,i+1])
         keep[i] <- FALSE
   }
@@ -168,13 +168,13 @@ function(mom, dad, m=10, obligate.chiasma=FALSE, xchr=FALSE, male=FALSE,
     mom <- modifyL(mom,sexsp*2/(1+sexsp))
     dad <- modifyL(dad,2/(1+sexsp))
   }
-                   
+
   mat <- meiosis(mom,m,obligate.chiasma)
 
-  if(!xchr) 
+  if(!xchr)
     pat <- meiosis(dad,m,obligate.chiasma)
   else {
-    if(male) 
+    if(male)
       pat <- dad$pat
     else
       pat <- dad$mat
@@ -213,9 +213,9 @@ function(mom, dad, m=10, obligate.chiasma=FALSE, xchr=FALSE, male=FALSE,
 ######################################################################
 sim.ri <-
 function(L, sexsp=1, type=c("selfing","sibmating"),
-         n.strains=c("2","4","8"), 
+         n.strains=c("2","4","8"),
          xchr=FALSE, m=10, obligate.chiasma=FALSE)
-{  
+{
   n.strains <- match.arg(n.strains)
   type <- match.arg(type)
 
@@ -253,7 +253,7 @@ function(L, sexsp=1, type=c("selfing","sibmating"),
                    ncol=length(nhet))
     nhet <- apply(nhet,1,sum)
     attr(output,"num.het") <- nhet
-      
+
     # get overall number of breaks at each generation
     nubreak <- lapply(output, attr, "nubreak")
     n <- max(sapply(nubreak, length))
@@ -286,25 +286,25 @@ function(L, sexsp=1, type=c("selfing","sibmating"),
 
   # final inter-breeding
   sib1 <- cross(par1, par2, m, obligate.chiasma, xchr, male=FALSE, sexsp)
-  if(type=="sibmating") 
+  if(type=="sibmating")
     sib2 <- cross(par1, par2, m, obligate.chiasma, xchr, male=FALSE, sexsp)
   else sib2 <- sib1
   par1 <- sib1; par2 <- sib2
 
   thenubreak <- c(thenubreak, nubreak(par1))
   nhet <- lhet <- NULL
-  
+
   while(1) { # stop loop when chromosome is fixed
     sib1 <- cross(par1, par2, m, obligate.chiasma, xchr, male=FALSE, sexsp)
-    if(type=="sibmating") 
+    if(type=="sibmating")
       sib2 <- cross(par1, par2, m, obligate.chiasma, xchr, male=FALSE, sexsp)
     else sib2 <- sib1
 
-    if(type=="sibmating") 
+    if(type=="sibmating")
       temp <- lennum.het(c(sib1,sib2))
     else
       temp <- lennum.het(sib1)
-    
+
     lhet <- c(lhet,temp[1])
     nhet <- c(nhet,temp[2])
 
@@ -314,7 +314,7 @@ function(L, sexsp=1, type=c("selfing","sibmating"),
 
     par1 <- sib1; par2 <- sib2
   }
-  
+
   output <- sib1[[1]]
   attr(output,"prop.het") <- lhet/L
   attr(output,"num.het") <- nhet
@@ -446,12 +446,12 @@ function(chr)
 modifyL <-
 function(ind, factor)
 {
-  if(is.list(ind)) 
+  if(is.list(ind))
     return(lapply(ind, function(a,b) { a[1,] <- a[1,]*b; a }, factor))
 
   ind[1,] <- ind[1,]*factor
-  
-  ind  
+
+  ind
 }
 
 ######################################################################
@@ -460,7 +460,7 @@ function(ind, factor)
 nubreak <-
 function(ind)
   length(unique(sort(unlist(lapply(ind, function(a) a[1,])))))-2
-    
+
 
 
 # end of sim_ril.R

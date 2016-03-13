@@ -9,15 +9,15 @@
 #     This program is free software; you can redistribute it and/or
 #     modify it under the terms of the GNU General Public License,
 #     version 3, as published by the Free Software Foundation.
-# 
+#
 #     This program is distributed in the hope that it will be useful,
 #     but without any warranty; without even the implied warranty of
 #     merchantability or fitness for a particular purpose.  See the GNU
 #     General Public License, version 3, for more details.
-# 
+#
 #     A copy of the GNU General Public License, version 3, is available
 #     at http://www.r-project.org/Licenses/GPL-3
-# 
+#
 # Part of the R/ricalc package
 # Contains: sim.ped, genAILped, convert2gen
 #
@@ -48,7 +48,7 @@ function(pedigree, L, sexsp=1, xchr=FALSE, m=10, obligate.chiasma=FALSE)
   momcol <- momcol[!is.na(momcol)]
   if(length(momcol) != 1)
     stop("There must be one column labeled \"mom\" or \"dam\".")
-  
+
   dadcol <- match(c("dad", "sire"), colnames(pedigree))
   dadcol <- dadcol[!is.na(dadcol)]
   if(length(dadcol) != 1)
@@ -57,11 +57,11 @@ function(pedigree, L, sexsp=1, xchr=FALSE, m=10, obligate.chiasma=FALSE)
   sexcol <- grep("^sex$", colnames(pedigree), ignore.case=TRUE)
   if(length(sexcol) != 1)
     stop("Can't find the \"sex\" column.")
-  
+
   idcol <- grep("^id$", colnames(pedigree), ignore.case=TRUE)
   if(length(idcol) != 1)
     stop("Can't find the \"id\" column.")
-  
+
   usex <- sort(unique(as.character(pedigree[,sexcol])))
   sex <- as.character(pedigree[,sexcol])
   if(all(usex == c("0", "1")))
@@ -82,7 +82,7 @@ function(pedigree, L, sexsp=1, xchr=FALSE, m=10, obligate.chiasma=FALSE)
   if(any((pedigree[,momcol]==0 & pedigree[,dadcol]!=0) |
          (pedigree[,momcol]!=0 & pedigree[,dadcol]==0)))
     stop("Need mom and dad to be both 0/NA or neither 0/NA")
-  
+
   nextparent <- 1
   for(i in 1:nrow(pedigree)) {
 
@@ -116,7 +116,7 @@ function(ngen=8, npairs=20, sibship.size=10)
   if(ngen < 2) stop("ngen must be >= 2")
   if(npairs < 1) stop("npairs must be > 0")
   if(sibship.size < 1) stop("sibship size must be > 0")
-  
+
   output <- matrix(ncol=5, nrow=4+2*npairs*(ngen-2)+sibship.size*npairs)
   colnames(output) <- c("id", "sex", "mom", "dad", "generation")
 
@@ -137,7 +137,7 @@ function(ngen=8, npairs=20, sibship.size=10)
   output[ind, 5] <- 2
 
   if(ngen==2) return(output)
-  
+
   for(gen in 3:(ngen-1)) {
     moms <- ind[output[ind,2]==0]
     dads <- ind[output[ind,2]==1]
@@ -216,7 +216,7 @@ function(xodat, map)
     output <- 2^output[[1]] + 2^output[[2]]
 
   dimnames(output) <- list(names(xodat), names(map))
-                           
+
   output
 }
 

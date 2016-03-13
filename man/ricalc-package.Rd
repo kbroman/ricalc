@@ -51,7 +51,7 @@
 \section{Counting and enumerating parental types}{
   \itemize{
      \item \code{\link{lookup}}: Lookup tables for parental types in the
-     generation of multiple-strain RIL, representing the 
+     generation of multiple-strain RIL, representing the
 
      \item \code{\link{get.start}}: Symbolic notation for the starting
      state in the generation of multiple-strain RIL.
@@ -59,7 +59,7 @@
      \item \code{\link{count.absorb}}: Count the absorbing states in
      multiple-strain RIL.
   }
-}   
+}
 
 \section{Calculations and simulations}{
   \itemize{
@@ -73,7 +73,7 @@
 
      \item \code{\link{get.full.tm}}: Calculate the
      generation-to-generation transition matrix for the formation of
-     RIL. 
+     RIL.
 
      \item \code{\link{get.full.tm.symbolic}}: Calculate the
      generation-to-generation transition matrix for the formation of

@@ -9,12 +9,12 @@
 #     This program is free software; you can redistribute it and/or
 #     modify it under the terms of the GNU General Public License,
 #     version 3, as published by the Free Software Foundation.
-# 
+#
 #     This program is distributed in the hope that it will be useful,
 #     but without any warranty; without even the implied warranty of
 #     merchantability or fitness for a particular purpose.  See the GNU
 #     General Public License, version 3, for more details.
-# 
+#
 # Part of the R/ricalc package
 # Contains:  get.meiosis.tm, get.meiosis.tm.symbolic,
 #            write.meiosis.tm.symbolic, read.meiosis.tm.symbolic
@@ -32,7 +32,7 @@
 # n.loci = number of loci (2 or 3)
 #
 ######################################################################
-get.meiosis.tm <- 
+get.meiosis.tm <-
 function(r, coinc=1, n.strains=c("2","4"), chrtype=c("A","X"),
          n.loci=c("2","3"))
 {
@@ -89,7 +89,7 @@ function(r, coinc=1, n.strains=c("2","4"), chrtype=c("A","X"),
 # n.loci = number of loci (2 or 3)
 #
 ######################################################################
-get.meiosis.tm.symbolic <- 
+get.meiosis.tm.symbolic <-
 function(n.strains=c("2","4"), chrtype=c("A","X"),
          n.loci=c("2","3"))
 {
@@ -147,7 +147,7 @@ function(n.strains=c("2","4"), chrtype=c("A","X"),
 # n.loci = number of loci (2 or 3)
 #
 ######################################################################
-write.meiosis.tm.symbolic <- 
+write.meiosis.tm.symbolic <-
 function(file, n.strains=c("2","4"), chrtype=c("A","X"),
          n.loci=c("2","3"))
 {
@@ -178,7 +178,7 @@ function(file, n.strains=c("2","4"), chrtype=c("A","X"),
 # n.loci = number of loci (2 or 3)
 #
 ######################################################################
-read.meiosis.tm.symbolic <- 
+read.meiosis.tm.symbolic <-
 function(file, n.strains=c("2","4"), chrtype=c("A","X"),
          n.loci=c("2","3"))
 {

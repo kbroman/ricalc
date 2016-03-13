@@ -22,7 +22,7 @@ genAILped(ngen=8, npairs=20, sibship.size=10)
   We generate equal numbers of males and females at each generation.
   Matings are with random male/female pairs, with no attempt to avoid
   matings between siblings.
-}  
+}
 
 \value{
   The output is a matrix with five columns: \code{"id"}, \code{"sex"}
@@ -35,7 +35,7 @@ genAILped(ngen=8, npairs=20, sibship.size=10)
 \examples{
 ailped <- genAILped(ngen=5, npairs=5, sibship.size=2)
 }
-                    
+
 \seealso{ \code{\link{sim.ped}} }
 
 \keyword{datagen}

@@ -22,8 +22,8 @@ imf.gam(r, nu=1, tol=1e-12)
 
 \details{
   Uses \code{\link[stats]{uniroot}} to solve the \code{r = mf.gam(d,
-    nu)}.  
-}  
+    nu)}.
+}
 
 \value{
   Vector of interval lengths (in cM), of same length as the input \code{r}.
@@ -34,7 +34,7 @@ imf.gam(r, nu=1, tol=1e-12)
 \examples{
 imf.gam(seq(0,0.49,by=0.01), 11.3)
 }
-                    
+
 \references{
 Zhao, H. and Speed, T. P. (1996) On genetic map
 functions. \emph{Genetics} \bold{142}, 1369--1377.

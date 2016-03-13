@@ -11,7 +11,7 @@
 
 \usage{
 sim.ri(L, sexsp=1, type=c("selfing","sibmating"),
-       n.strains=c("2","4","8"), 
+       n.strains=c("2","4","8"),
        xchr=FALSE, m=10, obligate.chiasma=FALSE)
 }
 
@@ -23,7 +23,7 @@ sim.ri(L, sexsp=1, type=c("selfing","sibmating"),
    sibling mating.}
  \item{n.strains}{Number of initial parental strains.}
  \item{xchr}{If \code{length(L)==1} and \code{type="sibmating"}, this
-     indicates to simulate the X chromosome.  If \code{length(L) > 1}, 
+     indicates to simulate the X chromosome.  If \code{length(L) > 1},
        the chromosomes named \code{"X"} or \code{"x"} are taken to be
        the X chromosome and all others are assumed to be autosomes.}
  \item{m}{The interference parameter (a non-negative integer).
@@ -37,10 +37,10 @@ sim.ri(L, sexsp=1, type=c("selfing","sibmating"),
   Meiosis is simulated by the chi-square model (see Zhao et al. 1995),
   with the possibility of requiring an obligate chiasma on the
   four-strand bundle at meiosis.
- 
+
   Inbreeding is performed until complete fixation.  Of course, we assume
   no mutation and no selection.
-}  
+}
 
 \value{
   If \code{length(L)==1}, the output is a two-row matrix whose first
@@ -67,7 +67,7 @@ sim.ri(L, sexsp=1, type=c("selfing","sibmating"),
 data(mouseL)
 ri <- sim.ri(mouseL, type="selfing", n.str="8")
 }
-                    
+
 \references{
   Haldane, J. B. S. and Waddington, C. H. (1931) Inbreeding and
   linkage. \emph{Genetics} \bold{16}, 357--374.

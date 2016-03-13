@@ -33,7 +33,7 @@ get.full.tm.symbolic(n.strains=c("2","4"), type=c("selfing","sibmating"),
 \examples{
   fulltm2self2 <- get.full.tm.symbolic()
 }
-                    
+
 \references{
   Haldane, J. B. S. and Waddington, C. H. (1931) Inbreeding and
   linkage. \emph{Genetics} \bold{16}, 357--374.
