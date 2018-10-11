@@ -8,8 +8,8 @@ have any problems with installation, send an email to Karl Broman
 OBTAINING R
 
   You can download R from the Comprehensive R Archive Network (CRAN).
-  Visit http://cran.r-project.org or a local mirror (for example,
-  http://cran.us.r-project.org).  Source code is available for Unix,
+  Visit https://cran.r-project.org or a local mirror (for example,
+  https://cran.us.r-project.org).  Source code is available for Unix,
   and binaries are available for Windows, MacOS, and many versions of
   Linux.
 
@@ -18,7 +18,7 @@ OBTAINING R/ricalc
 
   You can obtain the latest version of R/ricalc from
 
-      http://www.biostat.wisc.edu/~kbroman/software
+      https://www.biostat.wisc.edu/~kbroman/software
 
 
 INSTALLATION OF R AND R/ricalc (Windows)
