@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/kbroman/ricalc.svg?branch=master)](https://travis-ci.org/kbroman/ricalc)
 
-[Karl W Broman](http://kbroman.org)
+[Karl W Broman](https://kbroman.org)
 
 [R/ricalc](https://github.com/kbroman/ricalc) is an R package for
 calculating two- and three-locus probabilities in multiple-strain
@@ -20,4 +20,4 @@ merchantability or fitness for a particular purpose.  See the GNU
 General Public License for more details.
 
 A copy of the GNU General Public License, version 3, is available at
-<http://www.r-project.org/Licenses/GPL-3>
+<https://www.r-project.org/Licenses/GPL-3>
