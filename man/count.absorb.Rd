@@ -26,7 +26,7 @@ count.absorb(n.strains=c("2","4"),type=c("selfing","sibmating"),
   whose elements are the number of the full states corresponding to each.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 \examples{
   count.absorb()

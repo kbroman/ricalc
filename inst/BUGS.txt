@@ -7,7 +7,7 @@ package.
 
 If you find a potential bug in R/ricalc, please send an email, with as
 many details as possible and possibly example data, to Karl Broman,
-<kbroman@biostat.wisc.edu>.
+<broman@wisc.edu>.
 ----------------------------------------------------------------------
 
 Version 0.50

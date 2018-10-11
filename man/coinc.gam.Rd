@@ -30,7 +30,7 @@ coinc.gam(r, nu=1, tol=1e-12)
   \code{r}.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 \examples{
 coinc.gam(seq(0.01,0.49,by=0.01), 11.3)

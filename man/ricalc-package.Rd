@@ -94,6 +94,6 @@ Teuscher, F. and Broman, K. W. (2007) Haplotype probabilities for
 multiple-strain recombinant inbred lines. \emph{Genetics} \bold{175}, 1267--1274.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 \keyword{models}

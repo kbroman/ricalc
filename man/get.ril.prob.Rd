@@ -29,7 +29,7 @@ get.ril.prob(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
   form.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 
 \references{

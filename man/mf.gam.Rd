@@ -29,7 +29,7 @@ mf.gam(d, nu=1, tol=1e-12)
   Vector of recombination fractions, of same length as the input \code{d}.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 \examples{
 mf.gam(0:25, 11.3)
