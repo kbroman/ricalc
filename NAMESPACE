@@ -23,3 +23,5 @@ export(sim.ped, genAILped, convert2gen)
 # imports
 importFrom(stats, pgamma, integrate, uniroot, runif,
            rpois, qpois, dpois, rbinom, ppois)
+
+importFrom("utils", "data")
