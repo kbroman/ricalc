@@ -16,7 +16,7 @@
 #     General Public License, version 3, for more details.
 #
 #     A copy of the GNU General Public License, version 3, is available
-#     at http://www.r-project.org/Licenses/GPL-3
+#     at https://www.r-project.org/Licenses/GPL-3
 #
 # Part of the R/ricalc package
 # Contains: meiosis.sub, meiosis, create.parent, where.het,
