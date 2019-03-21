@@ -11,3 +11,4 @@ License: GPL-3
 URL: https://github.com/kbroman/ricalc
 BugReports: https://github.com/kbroman/ricalc/issues
 Encoding: UTF-8
+ByteCompile: true
