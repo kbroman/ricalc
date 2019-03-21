@@ -30,7 +30,7 @@ genAILped(ngen=8, npairs=20, sibship.size=10)
   and \code{"generation"}.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 \examples{
 ailped <- genAILped(ngen=5, npairs=5, sibship.size=2)

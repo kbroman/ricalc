@@ -29,7 +29,7 @@ imf.gam(r, nu=1, tol=1e-12)
   Vector of interval lengths (in cM), of same length as the input \code{r}.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 \examples{
 imf.gam(seq(0,0.49,by=0.01), 11.3)

@@ -34,7 +34,7 @@ convert2gen(xodat, map)
   \code{length(map)} columns.  Genotype codes are described in Details.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 \examples{
 ailped <- genAILped(ngen=2, npairs=2, sibship.size=2)

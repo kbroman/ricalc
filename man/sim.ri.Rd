@@ -61,7 +61,7 @@ sim.ri(L, sexsp=1, type=c("selfing","sibmating"),
   heterozygosity, respectively, after each generation of inbreeding.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 \examples{
 data(mouseL)

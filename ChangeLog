@@ -17,6 +17,11 @@ copyright (c) 2003-2015, Karl W Broman
 https://github.com/kbroman/ricalc
 ----------------------------------------------------------------------
 
+Version 0.55-4, 2019-03-21:
+
+  Change maintainer email.
+
+
 Version 0.55-2, 2015-07-22:
 
   Small changes to avoid warnings in R CMD check.

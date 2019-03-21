@@ -51,7 +51,7 @@ sim.ped(pedigree, L, sexsp=1, xchr=FALSE, m=10, obligate.chiasma=FALSE)
   left.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 \examples{
 ailped <- genAILped(ngen=5, npairs=5, sibship.size=2)

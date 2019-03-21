@@ -29,7 +29,7 @@ get.full.tm(r, coinc=1, n.strains=c("2","4"), type=c("selfing","sibmating"),
   matrix.  Only the non-zero elements of each row are returned.
 }
 
-\author{Karl W Broman, \email{kbroman@biostat.wisc.edu} }
+\author{Karl W Broman, \email{broman@wisc.edu} }
 
 \examples{
   fulltm2self2 <- get.full.tm(0.1)
