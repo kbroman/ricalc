@@ -2,8 +2,10 @@ Package: ricalc
 Version: 0.55-4
 Date: 2019-03-21
 Title: Calculations for Recombinant Inbred Lines
-Author: Karl W Broman <broman@wisc.edu>
+Author: Karl W Broman [aut, cre] (<https://orcid.org/0000-0002-4914-6671>)
 Maintainer: Karl W Broman <broman@wisc.edu>
+Authors@R: c(person("Karl W", "Broman", role=c("aut", "cre"),
+             email="broman@wisc.edu", comment=c(ORCID = "0000-0002-4914-6671")))
 Description: Calculate two- and three-locus probabilities in multiple-strain recombinant inbred lines, and simulate such lines.
 Depends: R (>= 2.10.1)
 Imports: stats, utils
