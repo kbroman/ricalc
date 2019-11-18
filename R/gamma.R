@@ -2,8 +2,8 @@
 #
 # gamma.R
 #
-# copyright (c) 2004-2012, Karl W Broman
-# last modified Oct, 2012
+# copyright (c) 2004-2019, Karl W Broman
+# last modified Nov, 2019
 # first written May, 2004
 #
 #     This program is free software; you can redistribute it and/or
@@ -92,7 +92,7 @@ function(r, nu=1, tol=1e-12)
 coinc.gam <-
 function(r, nu=1, tol=1e-12)
 {
-  if(any(r<=0 || r>0.5))
+  if(any(r<=0 | r>0.5))
     stop("Must have 0 < r <= 0.5")
 
   out <- r
