@@ -8,6 +8,18 @@
 calculating two- and three-locus probabilities in multiple-strain
 recombinant inbred lines, and for simulating such lines.
 
+See the related paper:
+
+> Broman KW (2005) The genomes of recombinant inbred lines.
+> [Genetics](http://www.genetics.org/) 169:1133-1146
+> 169:1133-1146
+> [![PubMed](https://kbroman.org/pages/icons16/pubmed-icon.png)](https://www.ncbi.nlm.nih.gov/pubmed/15545647)
+> [![pdf (525k)](https://kbroman.org/pages/icons16/pdf-icon.png)](http://www.genetics.org/content/genetics/169/2/1133.full.pdf)
+> [![doi](https://kbroman.org/pages/icons16/doi-icon.png)](https://doi.org/10.1534/genetics.104.035212)
+> [**Erratum**: [Genetics](http://www.genetics.org) 173:2419, 2006
+> [![pdf 30k](https://kbroman.org/pages/icons16/pdf-icon.png)](http://www.genetics.org/content/genetics/173/4/2419.full.pdf)\]
+
+
 ### License
 
 This package is free software; you can redistribute it and/or modify it
