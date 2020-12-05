@@ -1,6 +1,6 @@
 ## R/ricalc
 
-[![Build Status](https://travis-ci.org/kbroman/ricalc.svg?branch=master)](https://travis-ci.org/kbroman/ricalc)
+[![R build status](https://github.com/kbroman/ricalc/workflows/R-CMD-check/badge.svg)](https://github.com/kbroman/ricalc/actions)
 
 [Karl W Broman](https://kbroman.org)
 
