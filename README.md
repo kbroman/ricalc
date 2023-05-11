@@ -1,6 +1,7 @@
 ## R/ricalc
 
-[![R build status](https://github.com/kbroman/ricalc/workflows/R-CMD-check/badge.svg)](https://github.com/kbroman/ricalc/actions)
+[![R-CMD-check](https://github.com/kbroman/ricalc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kbroman/ricalc/actions/workflows/R-CMD-check.yaml)
+[![zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5149488.svg)](https://doi.org/10.5281/zenodo.5149488)
 
 [Karl W Broman](https://kbroman.org)
 
