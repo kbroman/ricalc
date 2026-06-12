@@ -1,6 +1,7 @@
 ## R/ricalc
 
 [![R-CMD-check](https://github.com/kbroman/ricalc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kbroman/ricalc/actions/workflows/R-CMD-check.yaml)
+[![r-universe badge](https://kbroman.r-universe.dev/ricalc/badges/version)](https://kbroman.r-universe.dev/ricalc)
 [![zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5149488.svg)](https://doi.org/10.5281/zenodo.5149488)
 
 [Karl W Broman](https://kbroman.org)
@@ -19,6 +20,26 @@ See the related paper:
 > [![doi](https://kbroman.org/pages/icons16/doi-icon.png)](https://doi.org/10.1534/genetics.104.035212)
 > [**Erratum**: [Genetics](https://www.genetics.org) 173:2419, 2006
 > [![pdf 30k](https://kbroman.org/pages/icons16/pdf-icon.png)](https://www.genetics.org/content/genetics/173/4/2419.full.pdf)\]
+
+
+### Installation
+
+Install the package from [r
+universe](https://kbroman.r-universe.dev/ricalc):
+
+```r
+install.packages("ricalc", repos="https://kbroman.r-universe.dev")
+```
+
+Alternatively, use the [remotes](https://remotes.r-lib.org) package to
+install it from [GitHub](https://github.com/kbroman/ricalc):
+
+```r
+install.packages("remotes")
+library(remotes)
+install_github("kbroman/ricalc")
+```
+
 
 
 ### License
