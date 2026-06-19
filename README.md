@@ -4,8 +4,6 @@
 [![r-universe badge](https://kbroman.r-universe.dev/ricalc/badges/version)](https://kbroman.r-universe.dev/ricalc)
 [![zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5149488.svg)](https://doi.org/10.5281/zenodo.5149488)
 
-[Karl W Broman](https://kbroman.org)
-
 [R/ricalc](https://github.com/kbroman/ricalc) is an R package for
 calculating two- and three-locus probabilities in multiple-strain
 recombinant inbred lines, and for simulating such lines.
